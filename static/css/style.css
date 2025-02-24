@@ -1,0 +1,88 @@
+/* Resetando o padrão de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-dark-orange {
+    background-color: #d35400;
+}
+
+body {
+    background-color: #f7f2e7; /* Cor de fundo bege claro */
+    font-family: 'Georgia', serif;
+    color: #5c3c25; /* Marrom rústico */
+}
+
+header {
+    background-color: #8b5a2b; /* Marrom rústico */
+    color: #fff8e7;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff8e7;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+section#galeria {
+    padding: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.photo-item {
+    text-align: center;
+    border: 2px solid #8b5a2b;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #8b5a2b;
+    color: #fff8e7;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
